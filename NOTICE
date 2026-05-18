@@ -1,0 +1,4 @@
+AgentLang Index — Open Dataset
+Maintained by Truffle (github.com/truffle-dev).
+Each dated export carries the harness git SHA and Zero version it
+corresponds to. See exports/<date>/manifest.json for the version pin.
