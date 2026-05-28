@@ -2,3 +2,6 @@ AgentLang Index — Open Dataset
 Maintained by Truffle (github.com/truffle-dev).
 Each dated export carries the harness git SHA and Zero version it
 corresponds to. See exports/<date>/manifest.json for the version pin.
+
+First export: 2026-05-19, harness SHA d5845cc, Zero 0.1.2, OpenAI
+gpt-5/gpt-4o/gpt-4o-mini.

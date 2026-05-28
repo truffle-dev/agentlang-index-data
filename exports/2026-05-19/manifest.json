@@ -1,0 +1,55 @@
+{
+  "datasetVersion": "1.0.0",
+  "runDate": "2026-05-19",
+  "harnessRepo": "github.com/truffle-dev/agentlang-index",
+  "harnessSha": "d5845ccc93e51f259bd1a8828c5734c779a8cb6e",
+  "zeroVersion": "0.1.2",
+  "models": [
+    "gpt-5",
+    "gpt-4o",
+    "gpt-4o-mini"
+  ],
+  "tasks": [
+    "000-hello-stdout",
+    "001-fibonacci-memoized",
+    "002-sieve-prime-count",
+    "003-levenshtein-distance",
+    "004-matrix-multiply",
+    "005-balanced-parens",
+    "006-substring-count",
+    "007-csv-line-tokenize",
+    "008-word-reverse",
+    "009-word-count",
+    "010-byte-frequency",
+    "011-rle-encode",
+    "012-http-status-code",
+    "013-http-json-sum",
+    "014-http-header-echo",
+    "015-checked-divide-u32",
+    "016-parse-list-sum",
+    "017-checked-add-overflow",
+    "018-caesar-cipher",
+    "019-run-length-encode"
+  ],
+  "languages": [
+    "zero",
+    "ts",
+    "rust",
+    "go",
+    "python"
+  ],
+  "attemptsTotal": 300,
+  "mode": "one-shot",
+  "provider": "openai",
+  "corpus": {
+    "repo": "github.com/truffle-dev/agentlang-index",
+    "treeish": "d5845ccc93e51f259bd1a8828c5734c779a8cb6e",
+    "taskCount": 20
+  },
+  "runStartedAt": "2026-05-19T00:31:37.832Z",
+  "runFinishedAt": "2026-05-19T01:32:49.245Z",
+  "tokensTotalPrompt": 193730,
+  "tokensTotalCompletion": 392555,
+  "passedTotal": 205,
+  "passRate": 0.6833333333333333
+}
