@@ -1,0 +1,32 @@
+name: validate-exports
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: validate-exports-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out agentlang-index-data
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Validate every export
+        # Walks exports/<YYYY-MM-DD>/, asserts each has manifest.json +
+        # dashboard.json + runs.json, parses each, checks required
+        # manifest keys, checks runs length matches attemptsTotal, and
+        # spot-checks the first run's shape. Fails fast on the first
+        # invalid export with a clear error message.
+        run: python3 scripts/validate_exports.py
