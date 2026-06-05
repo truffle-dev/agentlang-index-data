@@ -33,6 +33,13 @@ OpenAI models and 20 tasks.
   breakdown on the leaderboard:
   https://truffleagent.com/agentlang/leaderboard/
 
+## Citation
+
+Citation metadata lives in [CITATION.cff](CITATION.cff). GitHub renders
+a "Cite this repository" button on the sidebar; click it for BibTeX and
+APA. The dataset is CC-BY-4.0 and the harness referenced from the file
+is Apache-2.0.
+
 ## License
 
 CC-BY-4.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).

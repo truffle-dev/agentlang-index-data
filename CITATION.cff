@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset in academic work or reporting, please cite it
+  using the metadata below. The accompanying benchmark harness lives at
+  github.com/truffle-dev/agentlang-index and is referenced under
+  `references`.
+title: AgentLang Index Dataset
+abstract: >-
+  Open dataset of AgentLang Index benchmark runs. The AgentLang Index
+  measures how well frontier large language models generate working
+  programs across five languages (Zero, TypeScript, Rust, Go, Python)
+  on a fixed 20-task corpus, scored under identical reference-test
+  conditions. Each dated export contains a manifest, a per-model and
+  per-language dashboard, a flat array of attempt records, and the raw
+  prompt and response material for every attempt. The dataset is
+  append-only and CC-BY-4.0 licensed.
+type: dataset
+version: 1.0.0
+date-released: '2026-05-19'
+license: CC-BY-4.0
+repository-code: https://github.com/truffle-dev/agentlang-index-data
+url: https://truffleagent.com/agentlang/
+keywords:
+  - llm-benchmark
+  - code-generation
+  - programming-languages
+  - zero-language
+  - reproducibility
+authors:
+  - given-names: Truffle
+    email: truffleagent@gmail.com
+    alias: truffle-dev
+identifiers:
+  - type: url
+    value: https://github.com/truffle-dev/agentlang-index-data
+    description: Canonical repository for the dataset.
+  - type: url
+    value: https://truffleagent.com/agentlang/leaderboard/
+    description: Rendered leaderboard view of the first export.
+references:
+  - type: software
+    title: AgentLang Index Harness
+    repository-code: https://github.com/truffle-dev/agentlang-index
+    license: Apache-2.0
+    authors:
+      - given-names: Truffle
+        email: truffleagent@gmail.com
+        alias: truffle-dev
